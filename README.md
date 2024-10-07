@@ -2,34 +2,7 @@
 
 [Tiptap][tiptap] editor demo made with [Nuxt][nuxt], [Nitro](nitro) and [y-crossws][y-crossws] for live collaboration.
 
-Zero-config, deploys to everywhere!
-
-## Stack
-
-**Client:**
-
-- **[Nuxt][nuxt]**: Fullstack [Vue.js][Vue] based framework that makes web development intuitive and powerful.
-- **[Tiptap][tiptap]**: Headless editor framework with lots of extensions like collaboration.
-- **[Prosemirror][porsemirror]:** A toolkit for building rich-text editors. [Tiptap][tiptap] uses it as its underlying editor engine.
-
-**Server:**
-
-- **[Nitro][nitro]**: Server toolkit used by [Nuxt][nuxt] for runtime agnostic server development and deployments.
-- **[Crossws][crossws]**: Cross-platform WebSocket server integrated into [Nitro][nitro].
-- **[yjs][yjs]**: A [CRDT](https://github.com/yjs/yjs/blob/master/README.md#Yjs-CRDT-Algorithm) library for live collaborative editing.
-- **[y-crossws][y-crossws]**: Framework/platform agnostic WebSocket server  for [yjs][yjs] made with [crossws][crossws].
-
-
-<!-- references -->
-
-[nuxt]: https://nuxt.com/
-[vue]: https://vuejs.org/
-[nitro]: https://nitro.unjs.io/
-[crossws]: https://crossws.unjs.io
-[yjs]: https://yjs.dev/#features
-[y-crossws]: https://github.com/pi0/y-crossws
-[tiptap]: https://tiptap.dev/
-[porsemirror]: https://prosemirror.net/
+Zero-config deploys to everywhere!
 
 ## How it works?
 
@@ -47,9 +20,36 @@ export default defineWebSocketHandler(createHandler().hooks)
 
 That's all!
 
+## Stack
+
+**Client:**
+
+- **[Nuxt][nuxt]**: Fullstack [Vue.js][Vue] based framework that makes web development intuitive and powerful.
+- **[Tiptap][tiptap]**: Headless editor framework with various extensions, such as collaboration.
+- **[Prosemirror][porsemirror]**: A toolkit for building rich-text editors. [Tiptap][tiptap] uses it as its underlying editor engine.
+
+**Server:**
+
+- **[Nitro][nitro]**: Server toolkit used by [Nuxt][nuxt] for runtime agnostic server development and deployments.
+- **[Crossws][crossws]**: Cross-platform WebSocket server integrated into [Nitro][nitro].
+- **[yjs][yjs]**: A [CRDT](https://github.com/yjs/yjs/blob/master/README.md#Yjs-CRDT-Algorithm) library for live collaborative editing.
+- **[y-crossws][y-crossws]**: Framework- and platform-agnostic WebSocket server  for [yjs][yjs] made with [crossws][crossws].
 
 
-## Setup
+<!-- references -->
+
+[nuxt]: https://nuxt.com/
+[vue]: https://vuejs.org/
+[nitro]: https://nitro.unjs.io/
+[crossws]: https://crossws.unjs.io
+[yjs]: https://yjs.dev/#features
+[y-crossws]: https://github.com/pi0/y-crossws
+[tiptap]: https://tiptap.dev/
+[porsemirror]: https://prosemirror.net/
+
+
+
+## Development
 
 Make sure to install the dependencies:
 
@@ -57,15 +57,11 @@ Make sure to install the dependencies:
 pnpm install
 ```
 
-## Development server
-
 Start the development server on `http://localhost:3000`:
 
 ```bash
 pnpm run dev
 ```
-
-## Production deployment
 
 Build the application for production:
 
