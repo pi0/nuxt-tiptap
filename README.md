@@ -6,19 +6,21 @@ Zero-config deploys to everywhere!
 
 ## How it works?
 
-**Client:** We have integrated [Tiptap][tiptap] editor. Then we configure a Websocket provider to our Tip instance pointing to `ws://<url>/api/yjs/tiptap`.
+**Client:**
 
-**Server:** we use [y-crossws][y-crossws] in a [server route](https://nitro.unjs.io/guide/routing).
+We have integrated [Tiptap][tiptap] editor with [Vue.js][vue] with a WebSocket provider for live collaboration. Check [components/TiptapEditor.vue](./components/TiptapEditor.vue) for code.
+
+**Server:**
+
+We add [y-crossws][y-crossws] in a [server route](https://nitro.unjs.io/guide/routing). That's all needed!
+
+[server/api/yjs/[slug].ts](./server/api/yjs/[slug].ts):
 
 ```ts
-// server/api/yjs/[slug].ts
-
 import { createHandler } from "y-crossws";
 
-export default defineWebSocketHandler(createHandler().hooks)
+export default defineWebSocketHandler(createHandler().hooks);
 ```
-
-That's all!
 
 ## Stack
 
@@ -33,8 +35,7 @@ That's all!
 - **[Nitro][nitro]**: Server toolkit used by [Nuxt][nuxt] for runtime agnostic server development and deployments.
 - **[Crossws][crossws]**: Cross-platform WebSocket server integrated into [Nitro][nitro].
 - **[yjs][yjs]**: A [CRDT](https://github.com/yjs/yjs/blob/master/README.md#Yjs-CRDT-Algorithm) library for live collaborative editing.
-- **[y-crossws][y-crossws]**: Framework- and platform-agnostic WebSocket server  for [yjs][yjs] made with [crossws][crossws].
-
+- **[y-crossws][y-crossws]**: Framework- and platform-agnostic WebSocket server for [yjs][yjs] made with [crossws][crossws].
 
 <!-- references -->
 
@@ -46,8 +47,6 @@ That's all!
 [y-crossws]: https://github.com/pi0/y-crossws
 [tiptap]: https://tiptap.dev/
 [porsemirror]: https://prosemirror.net/
-
-
 
 ## Development
 
@@ -68,7 +67,6 @@ Build the application for production:
 ```bash
 pnpm run build # --preset <deployment preset>
 ```
-
 
 Check out the [deployment docs](https://nitro.unjs.io/deploy) for more information.
 

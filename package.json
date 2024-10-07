@@ -10,11 +10,26 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "@tiptap/extension-character-count": "^2.8.0",
+    "@tiptap/extension-collaboration": "^2.8.0",
+    "@tiptap/extension-collaboration-cursor": "^2.8.0",
+    "@tiptap/extension-highlight": "^2.8.0",
+    "@tiptap/extension-task-item": "^2.8.0",
+    "@tiptap/extension-task-list": "^2.8.0",
+    "@tiptap/pm": "^2.8.0",
+    "@tiptap/starter-kit": "^2.8.0",
+    "@tiptap/vue-3": "^2.8.0",
     "nitro": "npm:nitro-nightly",
     "nuxt": "3.13.2",
     "vue": "latest",
     "vue-router": "latest",
-    "y-crossws": "^0.0.1"
+    "y-crossws": "^0.0.1",
+    "y-websocket": "^2.0.4",
+    "yjs": "^13.6.19"
   },
-  "packageManager": "pnpm@9.12.0"
+  "packageManager": "pnpm@9.12.0",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
 }
