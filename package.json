@@ -1,0 +1,20 @@
+{
+  "name": "nuxt-crossws",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nitro": "npm:nitro-nightly",
+    "nuxt": "3.13.2",
+    "vue": "latest",
+    "vue-router": "latest",
+    "y-crossws": "^0.0.1"
+  },
+  "packageManager": "pnpm@9.12.0"
+}
