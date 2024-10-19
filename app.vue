@@ -5,7 +5,6 @@
     </div>
     <client-only>
       <tiptap-editor />
-      <!-- <chatbox /> -->
     </client-only>
   </div>
 </template>
