@@ -99,7 +99,7 @@ onMounted(() => {
       </button>
     </BubbleMenu>
 
-    <FloatingMenu :tippy-options="{ duration: 100 }" :editor="editor">
+    <!-- <FloatingMenu :tippy-options="{ duration: 100 }" :editor="editor">
       <button @click="editor.chain().focus().toggleHeading({ level: 1 }).run()"
         :class="editor.isActive('heading', { level: 1 }) ? 'is-active' : ''">
         H1
@@ -114,7 +114,7 @@ onMounted(() => {
         :class="editor.isActive('bulletList') ? 'is-active' : ''">
         Bullet list
       </button>
-    </FloatingMenu>
+    </FloatingMenu> -->
 
     <editor-content class="main-group" :editor="editor" />
 
