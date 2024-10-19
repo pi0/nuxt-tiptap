@@ -5,8 +5,16 @@ const colors = ["#958DF1", "#F98181", "#FBBC88", "#FAF594", "#70CFF8", "#94FADB"
 
 export function getDefaultContent() {
   return /* html */ `
-  <p>Hi 👋, this is a collaborative document.</p>
-  <p>Feel free to edit and collaborate in real-time!</p>
+  <h1>Welcome to Vue Fes Japan へようこそ 👋</h1>
+  <p>
+    This is a collaborative document. Feel free to edit and collaborate in real time!
+    <br>
+    これは共同作業用のドキュメントです。自由に編集し、リアルタイムで共同作業してください!
+  </p>
+  <p>
+    <br>
+    <br>
+  </p>
 `;
 }
 

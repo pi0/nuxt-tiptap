@@ -126,6 +126,7 @@
 }
 .tiptap .collaboration-cursor__label {
   border-radius: 3px 3px 3px 0;
+  opacity: 0.5;
   color: #0d0d0d;
   font-size: 12px;
   font-style: normal;

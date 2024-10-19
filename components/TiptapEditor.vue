@@ -42,8 +42,8 @@ onMounted(() => {
   // Save current user to localStorage and emit to editor
   watch(currentUser, () => {
     if (editor.value && currentUser.value) {
-      localStorage.setItem("currentUser", JSON.stringify(currentUser));
-      editor.value.chain().focus().updateUser(currentUser).run();
+      localStorage.setItem("currentUser", JSON.stringify(currentUser.value));
+      editor.value.chain().focus().updateUser(currentUser.value).run();
     }
   });
 
@@ -66,6 +66,9 @@ onMounted(() => {
       CollaborationCursor.configure({ provider }),
     ],
   });
+
+  // Sync user
+  editor.value.chain().focus().updateUser(currentUser.value).run();
 
   // Cleanup  after unmount
   onUnmounted(() => {
