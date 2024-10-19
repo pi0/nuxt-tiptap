@@ -1,7 +1,7 @@
 <template>
   <div class="col-group">
     <div id="links" class="fixed top-4 right-5 underline">
-      <a href="https://github.com/pi0/y-crossws" target="_blank" rel="noopener noreferrer">view source on Github</a>
+      <a href="https://github.com/pi0/nuxt-tiptap" target="_blank" rel="noopener noreferrer">view source on Github</a>
     </div>
     <client-only>
       <tiptap-editor />
