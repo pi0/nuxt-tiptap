@@ -5,10 +5,10 @@ const colors = ["#958DF1", "#F98181", "#FBBC88", "#FAF594", "#70CFF8", "#94FADB"
 
 export function getDefaultContent() {
   return /* html */ `
-  <h1>Welcome to Vue Fes Japan へようこそ 👋</h1>
+  <h1>Welcome to Nuxt + Tiptap Demo 👋</h1>
   <p>
     This is a collaborative document. Feel free to edit and collaborate in real time!
-    <br>
+    <br><br>
     これは共同作業用のドキュメントです。自由に編集し、リアルタイムで共同作業してください!
   </p>
   <p>

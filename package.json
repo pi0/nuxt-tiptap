@@ -9,27 +9,24 @@
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview"
   },
-  "resolutions": {
-    "nitropack": "npm:nitropack-nightly@2.10.0-20241018-181351.7a97b0a2"
-  },
   "dependencies": {
-    "@faker-js/faker": "^9.0.3",
+    "@faker-js/faker": "^9.1.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
-    "@tiptap/extension-character-count": "^2.8.0",
-    "@tiptap/extension-collaboration": "^2.8.0",
-    "@tiptap/extension-collaboration-cursor": "^2.8.0",
-    "@tiptap/extension-highlight": "^2.8.0",
-    "@tiptap/extension-task-item": "^2.8.0",
-    "@tiptap/extension-task-list": "^2.8.0",
-    "@tiptap/pm": "^2.8.0",
-    "@tiptap/starter-kit": "^2.8.0",
-    "@tiptap/vue-3": "^2.8.0",
+    "@tiptap/extension-character-count": "^2.9.1",
+    "@tiptap/extension-collaboration": "^2.9.1",
+    "@tiptap/extension-collaboration-cursor": "^2.9.1",
+    "@tiptap/extension-highlight": "^2.9.1",
+    "@tiptap/extension-task-item": "^2.9.1",
+    "@tiptap/extension-task-list": "^2.9.1",
+    "@tiptap/pm": "^2.9.1",
+    "@tiptap/starter-kit": "^2.9.1",
+    "@tiptap/vue-3": "^2.9.1",
     "nuxt": "latest",
     "vue": "latest",
     "vue-router": "latest",
     "y-crossws": "^0.0.2",
     "y-websocket": "^2.0.4",
-    "yjs": "^13.6.19"
+    "yjs": "^13.6.20"
   },
   "devDependencies": {
     "prettier": "^3.3.3"
