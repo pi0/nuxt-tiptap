@@ -1,6 +1,6 @@
 <template>
   <div class="col-group">
-    <div id="links" class="fixed top-4 right-5 underline">
+    <div id="links" class="fixed top-4 right-5 underline z-1">
       <a href="https://github.com/pi0/nuxt-tiptap" target="_blank" rel="noopener noreferrer">view source on Github</a>
     </div>
     <client-only>
